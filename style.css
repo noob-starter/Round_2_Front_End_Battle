@@ -1,0 +1,15 @@
+:root{
+
+}
+
+* {
+    background: transparent;
+    background-color: transparent;
+    padding: 0 ;
+    margin: 0;
+    cursor: pointer;
+}
+
+body{
+    background-color: white;
+}
