@@ -1,0 +1,98 @@
+:root {
+    --color-1: #F5F5F5;
+    --color-2: #97E7E1;
+    --color-3: #6AD4DD;
+    --color-4: #7AA2E3;
+    --color-5: rgb(200, 200, 200);
+    --color-6: #000000;
+}
+
+*,
+*::after,
+*::before {
+    background: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+button {
+    background: var(--color-4);
+    border-radius: 999px;
+    box-shadow: var(--color-4) 0 10px 20px -10px;
+    color: var(--color-6);
+    font-size: 1rem;
+    font-weight: 1000;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 9px 18px;
+    border: 0;
+}
+
+
+button:hover {
+    scale: 1.1;
+    transform: translateY(-5px);
+    transition: transform 1s ease-in-out;
+    transition: scale 0.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-6);
+}
+
+
+.logo {
+    position: relative;
+    margin-top: 50px;
+    order: 1;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.logo b {
+    font-size: 3rem;
+}
+
+.table{
+    position: relative;
+    border-collapse: collapse;
+    margin: 50px 100px ;
+    padding: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid var(--color-6);
+    background-color: var(--color-3);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
+td {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+}
