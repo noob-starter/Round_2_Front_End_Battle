@@ -12,7 +12,8 @@
 <body>
 
     <!-- section 1: Navigation bar setup -->
-    <section class="section_1">
+    <div id="ceo_message"></div>
+    <section class="section_1" id="section_1">
         <div class="section_1_container">
             <nav class="navbar">
                 <div class="navbar-container container">
@@ -23,14 +24,14 @@
                         <span class="line line3"></span>
                     </div>
                     <ul class="menu-items">
-                        <li><a href="#" class="home">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#" class="new-release">New Releases</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/" class="home">Home</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Berkshire_Hathaway">About</a></li>
+                        <li><a href="supply_pages/releases/releases.html" class="new-release">New Releases</a></li>
+                        <li><a href="/">Contact</a></li>
                         <li class="message"><a href="#">Message from CEO</a></li>&nbsp;&nbsp;&nbsp;
-                        <li><button>Message from CEO</button></li>
+                        <li><button id="message_button" onclick="openCEOMessage()">Message from CEO</button></li>
                     </ul>
-                    <span class="logo"><b>B</b>ERKSHIRE <b>H</b>ATHAWAY <small>INC.</small></span>
+                    <a href="/"><span class="logo"><b>B</b>ERKSHIRE <b>H</b>ATHAWAY <small>INC.</small></span></a>
                 </div>
             </nav>
         </div>
@@ -38,7 +39,7 @@
 
 
     <!-- Section 2 General Introduction to company  -->
-    <section class="section_2">
+    <section class="section_2" id="section_2">
         <div class="section_2_container">
             Berkshire Hathaway
             <div>American multinational conglomerate holding company headquartered
@@ -56,118 +57,135 @@
         <div class="section_3_container">
             <div class="card">
                 <p class="card-header">Annual & Interim Reports</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"> Comprehensive overview of a company's financial performance and operations over
+                    the past years and a snapshot of financial results and key developments
+                    for a shorter period, often covering a quarter or half-year.</p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/reports/reports.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">News Releases from Berkshire Hathaway and from Warren Buffett</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">First Quarter Earnings 2024, Annual Meeting and First Quarter Earnings Release
+                    Information, Fourth Quarter Earnings 2023, etc...</strong>
+                </p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/releases/releases.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Annual Meeting Information</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">Review on company performance, governance, and strategic direction.
+                </p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/annual_meet/annual_meet.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Link to SEC Filings</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">Find and access over 20 years of EDGAR filings by name, ticker or CIK.</p>
+                <p class="card-footer"><button onclick=""><a href="https://tinyurl.com/rwnjwp39">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Berkshire Hathaway Energy Investor Presentations</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">To be the best energy company in serving our customers, while delivering
+                    sustainable energy solutions</p>
+                <p class="card-footer"><button onclick=""><a
+                            href="supply_pages/energy_invester/energy_invester.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Special Letters from Warren & Charlie RE:Past, Present and Future</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a
+                            href="supply_pages/special_letters/special_letters.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Warren Buffett's Letters to Berkshire Shareholders</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">
+                    For shareholders and others who are interested, a book that compiles the full unedited versions of
+                    each of Warren Buffett’s letters to shareholders between 1965 and 2014 is available for sale</p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/letter_sale/letter_sale.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Links to Berkshire Subsidiary Companies</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">
+                    Acme Brick Company
+                    IMC International Metalworking Companies
+                    Alleghany Corporation
+                    IPS, etc...</p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/links/links.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Charlie Munger's Letters to Wesco Shareholders</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">Letters to Shareholders
+                    from CHARLES T. MUNGER, CHAIRMAN</p>
+                <p class="card-footer"><button onclick=""><a href="supply_pages/letters/letters.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Corporate Governance</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">Rules and practices that guide and oversee the management and
+                    direction of a company.</p>
+                <p class="card-footer"><button onclick=""><a href="https://www.berkshirehathaway.com/govern/govern.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Celebrating 50 Years of a Profitable Partnership</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a href="https://www.ebay.com/itm/185860708853">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Sustainability</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content">Integrate environmental, social, and governance (ESG) factors into investment
+                    decisions to promote long-term value creation and risk management</p>
+                <p class="card-footer"><button onclick=""><a href="https://www.berkshirehathaway.com/sustainability/sustainabilityintro.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">
                     Common Stock Information</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a href="https://www.berkshirehathaway.com/brkshareholderinfo/brkshareholderinfo.html">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Letters from Warren E. Buffett Regarding Pledges to Make Gifts of Berkshire Stock
                 </p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a href="https://www.berkshirehathaway.com/donate/webdonat.html">Know more
+                            ...</a></button></p>
             </div>
 
 
             <div class="card">
                 <p class="card-header">
                     Facts Regarding Berkshire's 2021 Investments in Activision Common Stock</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a href="#">Know more
+                            ...</a></button></p>
             </div>
 
             <div class="card">
                 <p class="card-header">Berkshire Activewear</p>
-                <p class="card-content">A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong>
-                    trend.</p>
-                <p class="card-footer"><button>Know More ...</button></p>
+                <p class="card-content"></p>
+                <p class="card-footer"><button onclick=""><a href="https://berkshirewear.com/">Know more
+                            ...</a></button></p>
             </div>
 
         </div>
@@ -176,10 +194,13 @@
     <!-- Section 4: Footer of the page -->
     <section class="section_4">
         <div class="section_4_container">
-            <p><h2>GEICO</h2></p> <br>
+            <p>
+            <h2>GEICO</h2>
+            </p> <br>
             <p>
                 FOR A FREE CAR INSURANCE RATE QUOTE THAT COULD SAVE YOU SUBSTANTIAL MONEY
-               </p> <p>WWW.GEICO.COM OR CALL 1-888-395-6349, 24 HOURS A DAY
+            </p>
+            <p>WWW.GEICO.COM OR CALL 1-888-395-6349, 24 HOURS A DAY
             </p>
         </div>
         <div class="copy-right">
