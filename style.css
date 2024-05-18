@@ -348,18 +348,37 @@ button:hover {
 
 
 
+/* Section 4 */
+
+.section_4{
+    position: absolute;
+    top: 310%;
+    padding: 100px;
+    left: 20%;
+}
+.section_4 .section_4_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.section_4 .section_4_container p{
+   text-align: center;
+    font-size: 1rem;
+}
+
+.section_4 .copy-right{
+    transform: translateY(150%) translateX(-50%);
+}
 
 
 
 
 
 
-
-
-
-
-
-
+/* Final media Query */
   @media screen and (max-width: 500px) {
     .section_1, .section_2, .section_3{
         display: none;
