@@ -304,6 +304,10 @@ a {
     font-size: 1.8rem;
 }
 
+.section_2 .section_2_container .section_2_title {
+    animation: colorTransition 5s infinite;
+}
+
 
 @media screen and (max-width: 768px) {
     .section_2 .section_2_container {
